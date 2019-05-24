@@ -46,7 +46,7 @@ public class RegisterMonitor {
                         } else {
                             if ((System.currentTimeMillis() - register.createTime()) > register.timeout()) {
                                 LOGGER.error("checked there is a register not triggered. the uniqueId is: [{}]", key);
-                                //registerMap.remove(key);
+
                             }
                         }
                     }
